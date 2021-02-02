@@ -3,7 +3,7 @@
 This is a simple php script that use Yoctopuce PHP Library to send and email when a home heater 
 is stopped. See more detail on our web site : http://www.yoctopuce.com/EN/XXXX 
 
-## Installations
+## Installation
 - edit the source to change the password dans the email used by the script.
 - upload this script to your server
 - run ``composer install`` to install Yoctopuce library
