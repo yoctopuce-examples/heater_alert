@@ -1,0 +1,15 @@
+{
+  "name": "yoctopuce/heater_alarm",
+  "description": "An simple ",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "seb",
+      "email": "sebastien@yoctopuce.com"
+    }
+  ],
+  "require": {
+    "yoctopuce/yoctolib_php": ">=1.10.32417"
+  }
+}
