@@ -6,21 +6,14 @@ define("DEST_EMAIL", "somebody@example.com");
 define("SRC_EMAIL", "somebody@example.com");
 
 
-function send_alert()
-{
+$error = "";
+if (YAPI::RegisterHub('md5:' . MD5_PASSWD . '@callback') == YAPI::SUCCESS) {
     $subject = "Heater Alert!";
     $message = "<html><head><title>{$subject}</title></head><body><h1>{$subject}</h1><p>The Heater alert has been triggered. Please check it.</p></body></html>";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: <' . SRC_EMAIL . '>' . "\r\n";
     mail(DEST_EMAIL, $subject, $message, $headers);
-}
-
-
-$error = "";
-if (YAPI::TestHub('md5:' . MD5_PASSWD . '@callback', 10, $error) == YAPI::SUCCESS) {
-    YAPI::RegisterHub('md5:' . MD5_PASSWD . '@callback');
-    send_alert();
     die("Alarm has been triggered");
 }
 ?>
