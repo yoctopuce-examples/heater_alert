@@ -1,7 +1,7 @@
 # Heater Alert
 
 This is a simple php script that use Yoctopuce PHP Library to send and email when a home heater 
-is stopped. See more detail on our web site : http://www.yoctopuce.com/EN/XXXX 
+is stopped. See more detail on our web site : https://www.yoctopuce.com/EN/article/monitoring-the-state-of-an-oil-fired-furnace
 
 
 ## Installation
